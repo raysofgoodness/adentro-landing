@@ -9,6 +9,7 @@
 body {
     @apply bg-white;
     color: var(--brand-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -16,4 +17,14 @@ body {
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
 }

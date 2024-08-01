@@ -1,15 +1,18 @@
 import Header from './components/Header/Header';
-import Image from "next/image";
+import Footer from "@/app/components/Footer/Footer";
 
 export default function Home() {
     return (
         <>
-            <Header />
-            <main>
-                <div className="container">
+            <div className="inner">
+                <Header />
+                <main className="main">
+                    <div className="container">
 
-                </div>
-            </main>
+                    </div>
+                </main>
+                <Footer />
+            </div>
         </>
     );
 }
