@@ -38,7 +38,7 @@ const Search: React.FC = () => {
                 </h2>
                 <div className={styles.description}>
                     <p>
-                        Elastic Search's robust data indexing and search capabilities combined with the
+                        Elastic Search&apos;s robust data indexing and search capabilities combined with the
                         analytical power of Large Language Models (LLM) offer unparalleled
                         insights into your security data. This combination allows for:
                     </p>

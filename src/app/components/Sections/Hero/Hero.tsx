@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
                 </h1>
                 <div className={styles.description}>
                     <p>
-                        In today's dynamic digital landscape, efficient security operations are crucial
+                        In today&apos;s dynamic digital landscape, efficient security operations are crucial
                         for organizational success and resilience. Cutting-edge automation transforms compliance
                         governance and risk assessment.
                     </p>
