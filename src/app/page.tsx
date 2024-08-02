@@ -9,16 +9,14 @@ export default function Home() {
     return (
         <>
             <div className="inner">
-                <Header />
+                <Header/>
                 <main className="main">
-                    <div className="container">
-                        <Hero />
-                        <Expertise />
-                        <Choose />
-                        <Search />
-                    </div>
+                    <Hero/>
+                    <Expertise/>
+                    <Choose/>
+                    <Search/>
                 </main>
-                <Footer />
+                <Footer/>
             </div>
         </>
     );

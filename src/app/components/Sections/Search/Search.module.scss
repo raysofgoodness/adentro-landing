@@ -1,5 +1,9 @@
 .search {
     padding: 70px 0 0 0;
+    background-image: url("/search-decor.png");
+    background-position: 20% 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (min-width: 1024px) {
         padding: 192px 0 0 0;
@@ -53,11 +57,11 @@
     }
 
     &__item {
-        padding: 30px;
+        padding: 28px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 46px;
+        gap: 24px;
         background-color: #fff;
         border: 1px solid rgba(#1a1365, .36);
 
@@ -76,5 +80,43 @@
         @media (min-width: 1024px) {
             width: calc((100% / 3) - 14px);
         }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (min-width: 1024px) {
+            font-size: 22px;
+        }
+    }
+
+    &__description {
+        margin: auto 0 0 0;
+        line-height: 1.8;
+
+        @media (min-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 500;
+    background-image: url("/background-count.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+
+    @media (min-width: 1024px) {
+        font-size: 24px;
     }
 }

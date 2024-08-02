@@ -19,10 +19,11 @@
 
 .image {
     position: absolute;
-    top: -15%;
+    top: -5%;
     right: -15%;
     width: 739px;
     height: 694px;
+    opacity: 0.7;
     animation: pulse 5s infinite;
 
     @media (min-width: 1024px) {
@@ -30,6 +31,7 @@
         right: -22%;
         width: 1039px;
         height: 978px;
+        opacity: unset;
     }
 }
 
