@@ -1,0 +1,22 @@
+.button {
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #7774aa;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all ease .3s;
+
+    @media (min-width: 1024px) {
+        padding: 12px 50px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: #7774aa;
+        background-color: transparent;
+        border-color: #7774aa;
+    }
+}
