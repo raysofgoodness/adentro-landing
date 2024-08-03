@@ -5,6 +5,7 @@ import Expertise from "./components/Sections/Expertise/Expertise";
 import Choose from "./components/Sections/Choose/Choose";
 import Search from "./components/Sections/Search/Search";
 import Ai from "./components/Sections/Ai/Ai";
+import Partner from "./components/Sections/Partner/Partner";
 
 export default function Home() {
     return (
@@ -12,11 +13,12 @@ export default function Home() {
             <div className="inner">
                 <Header/>
                 <main className="main">
-                    <Hero/>
-                    <Expertise/>
-                    <Choose/>
-                    <Search/>
+                    <Hero />
+                    <Expertise />
+                    <Choose />
+                    <Search />
                     <Ai />
+                    <Partner />
                 </main>
                 <Footer/>
             </div>

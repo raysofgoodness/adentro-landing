@@ -1,8 +1,28 @@
+'use client';
+
 import styles from './Hero.module.scss';
 import Image from 'next/image';
 import Button from "@/app/components/Button/Button";
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
 
 const Hero: React.FC = () => {
+    const titleRef = useRef<HTMLHeadingElement>(null);
+    const descriptionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        gsap.fromTo([titleRef.current, descriptionRef.current], {
+            opacity: 0,
+            y: 20,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            ease: "power2.out",
+            stagger: 0.3,
+        });
+    }, []);
+
     return (
         <section className={styles.hero}>
             <Image
@@ -15,10 +35,10 @@ const Hero: React.FC = () => {
                 priority
             />
             <div className={`${styles.container} container`}>
-                <h1 className={styles.title}>
+                <h1 ref={titleRef} className={styles.title}>
                     Efficiency comes with <strong>automation</strong>
                 </h1>
-                <div className={styles.description}>
+                <div ref={descriptionRef} className={styles.description}>
                     <p>
                         In today&apos;s dynamic digital landscape, efficient security operations are crucial
                         for organizational success and resilience. Cutting-edge automation transforms compliance
