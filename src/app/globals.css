@@ -37,3 +37,16 @@ body {
     font-size: clamp(28px, 4vw, 42px);
     font-weight: 600;
 }
+
+.big-title {
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.big-title strong {
+    display: block;
+    font-size: clamp(30px, 5vw, 78px);
+    font-weight: 500;
+}

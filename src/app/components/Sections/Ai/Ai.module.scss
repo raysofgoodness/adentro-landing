@@ -1,0 +1,106 @@
+.ai {
+    padding: 60px 0 260px 0;
+    background-image: url("/ai-decor.svg");
+    background-position: center bottom 2%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 800px) {
+        padding: 60px 0 0 0;
+        background-position: right 15% bottom 4%;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 162px 0 0 0;
+        background-position: right 20% bottom 4%;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1200px) {
+        background-position: right 25% bottom 4%;
+    }
+
+    @media (min-width: 1660px) {
+        background-position: right 30% bottom 4%;
+    }
+}
+
+.description {
+    margin: 40px auto 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    @media (min-width: 1024px) {
+        margin: 74px 0 50px;
+        max-width: 738px;
+        width: 100%;
+        font-size: 26px;
+        text-align: unset;
+    }
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 28px;
+
+    @media (min-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        gap: 28px 60px;
+    }
+
+    &__item {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        border: 1px solid rgba(#1a1365, .36);
+        transition: all ease .3s;
+
+        img {
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 800px) {
+            padding: 40px 34px;
+        }
+
+        @media (min-width: 1024px) {
+            &:hover {
+                background-color: #ececec;
+                border: 1px solid #1a1365;
+            }
+        }
+    }
+
+    &__title {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+
+        @media (min-width: 1024px) {
+            font-size: 26px;
+        }
+    }
+
+    &__description {
+        margin: 30px 0 0 0;
+        line-height: 1.8;
+
+        @media (min-width: 1024px) {
+            font-size: 16px;
+            max-width: 460px;
+        }
+    }
+}

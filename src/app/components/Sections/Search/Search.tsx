@@ -1,4 +1,5 @@
 import styles from './Search.module.scss';
+import Image from 'next/image';
 
 interface Items {
     title: string,
@@ -30,7 +31,7 @@ const Search: React.FC = () => {
     return (
         <section className={styles.search}>
             <div className="container">
-                <h2 className={styles.title}>
+                <h2 className="big-title">
                     <strong>
                         Elastic Search and LLM
                     </strong>
